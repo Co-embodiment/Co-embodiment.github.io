@@ -6,13 +6,22 @@
 -->
 <html>
 	<head>
-		<title>AR-Puppeteer</title>
+		<title>One Body, Two Minds</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="assets/css/llm.css" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<style>
+		.all-experiments-container {
+		    margin-top: 3cm;
+		}
+		#intro p {
+				color: #d9e0ff;
+			}
+	</style>
 	<body class="is-preload">
 
 		<!-- Sidebar -->
@@ -20,10 +29,10 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Abstract</a></li>
-							<!--li><a href="#app">Oculus App</a></li>
-							<li><a href="#code">ROS Code</a></li>
-							<li><a href="#question">Questionnaire</a></li-->
+							<li><a href="#intro">Main</a></li>
+							<!-- <li><a href="#train">Expert Demonstrations</a></li> -->
+							<li><a href="#eval">Experiments</a></li>
+							<!--li><a href="#cite">How to Cite</a></li-->
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
@@ -36,97 +45,148 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h2>							<h2>One Body, Two Minds: Variable Autonomy for a Co-embodied Robotic Hand </h2>
- </h2>
-							<h3> Piotr Koczy, Yuchong Zhang, Danica Kragic, Michael C. Welle</h3>
+							<h1>One Body, Two Minds: Variable Autonomy for a Co-embodied Robotic Hand</h1>
+							<h2>Piotr Koczy, Yuchong Zhang, Danica Kragic, Michael C. Welle</h2>
 							<p>
-								TODO
-	</p>
-							<p>
+								We present a TODO					<p>
 							</p>
-							<a href="files/TODO.pdf" download="files/TODO.pdf" target="_blank">
-							<button style="font-size:24px" >Preprint <i class="fa fa-download" target="_blank"></i></button>
-							</a>
-							<p> </p>
+							<div class="row">
+								<div class="video-container">
+									<button onclick="window.open('files/preprint.pdf', '_blank');" class="download-button">Download Preprint</button>
+							    </div>
+							</div>
 
 							<div class="row">
-								<!--article class="col-4 col-12-xsmall work-item"-->
-									<video controls="" class="overview-video">
-									  <source src="videos/TODO.mp4" type="video/mp4">
-									</video>
-								<!--/article-->
+								<div class="video-container">
+							        <p><b></b> </p>
+							        <video width="960" height="540" controls="none">
+							            <source src="videos/main_video.mp4" type="video/mp4">
+							            Your browser does not support the video tag.
+							        </video>
+
+							    </div>
+
 							</div>
 
 
 
-
+							<!-- <a href="files/preprint.pdf" target="_blank" download="files/preprint.pdf"><b>Download Preprint</b></a> -->
 						</div>
 					</section>
 
 
-					<!-- Method -->
-					<!--section id="app" class="wrapper style2 fade-up">
+					<!-- Train -->
+					<section id="train" class="wrapper style2 fade-up">
 						<div class="inner">
-							<h2>Occulus 3 APK</h2>
+							<h2>Expert Demonstrations</h2>
+								<div class="video-container">
+							        <p><b>Lid unscrewing session using teleoperation system</b> </p>
+							        <video width="960" height="960" controls preload="auto">
+							            <source src="videos/teleop_website.mp4" type="video/mp4">
+							        </video>
+							    </div>
+						</div>
+					</section>
 
-							<p>APK:</p>
-								
-								<a href="files/Puppeteer_Franka.apk"  download="files/Puppeteer_Franka.apk" target="_blank">
-								    <button style="font-size:18px">Get the APK! <i class=""></i></button>
-								</a>
-								
+
+
+					<!-- Eval -->
+					<section id="eval" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Experiments</h2>
+
+
+
+							<div class="row">
+								<div class="video-container">
+							        <p><b>Best policy evaluation (\(\pi_{nt}\))</b> </p>
+							        <video width="960" height="540" controls preload="auto">
+							            <source src="videos/policy_demo.mp4" type="video/mp4">
+							            Your browser does not support the video tag.
+							        </video>
+							    </div>							  
+							</div>
+
+
+							<div class="row all-experiments-container">
+								<p>
+								  <a class="button mybutton" href="experiments_videos.html">
+									<span style="font-size: 1.5em;">π<sub>all</sub><sup>50</sup></span>
+								  </a>
+								</p>
+							</div>
+<!-- 							
+							<div class="row">
+								<p>
+								  <a class="button mybutton" href="50.html">
+									<span style="font-size: 1.5em;">π<sub>all</sub><sup>50</sup></span>
+								  </a>
+								</p>
+								<p>
+								  <a class="button mybutton" href="70.html">
+									<span style="font-size: 1.5em;">π<sub>all</sub><sup>70</sup></span>
+								  </a>
+								</p>
+								<p>
+								  <a class="button mybutton" href="90.html">
+									<span style="font-size: 1.5em;">π<sub>all</sub><sup>90</sup></span>
+								  </a>
+								</p>
+								<p>
+								  <a class="button mybutton" href="100.html">
+									<span style="font-size: 1.5em;">π<sub>all</sub></span>
+								  </a>
+								</p>
+								<p>
+								  <a class="button mybutton" href="100ne.html">
+									<span style="font-size: 1.5em;">π<sub>ne</sub></span>
+								  </a>
+								</p>
+								<p>
+								  <a class="button mybutton" href="100nt.html">
+									<span style="font-size: 1.5em;">π<sub>nt</sub></span>
+								  </a>
+								</p>
+								<p>
+								  <a class="button mybutton" href="100nw.html">
+									<span style="font-size: 1.5em;">π<sub>nw</sub></span>
+								  </a>
+								</p>
+							  </div>
+							   -->
 
 							
-								<p> Disclaimer: This application is intended for research purposes, and may contain bugs or unexpected behavior. Users should always ensure a safe distance is maintained when operating the robot. The developers are not liable for any injuries, damages, or losses resulting from the use of this app. Use of this application is solely at the user's own risk. </p>
-								
-						
 
 						</div>
 					</section>
 
+				
+						<!-- Cite -->
+					<!--section id="cite" class="wrapper style2 fade-up">
 
-
-
-							</section>
-
-							<section id="code" class="wrapper style4 fade-up">
-
-								<div class="inner">
-									<h2>Code</h2>
-									<p>Code available at the following repository: </p>
-
-							<a href="https://github.com/AR-puppeteer/ar_puppeteer_franka" target="_blank">
-										<button style="font-size:18px" >ROS code Repository! <i class="fa fa-github"></i></button>
-										</a>
-
-									
-
-
-								</div>
-
-
-
-
-
-							</section>
-
-
-
-					<section id="question" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>Questionnaire</h2>
+							<h2>Use the following to cite us:</h2>
+							p class="p-code"><code>@inproceedings{welle2024quest2ros, <br>
+						  title={Quest2ROS: An App to Facilitate Teleoperating Robots},<br>
+						  author={Welle, Michael C and Ingelhag, Nils and Lippi, Martina and Wozniak, Maciej and Gasparri, Andrea and Kragic, Danica},<br>
+						  booktitle={7th International Workshop on Virtual, Augmented, and Mixed-Reality for Human-Robot Interactions},<br>
+						  year={2024}
+							}
+</code></p>
+							<p> </p>
 
-							<p>Download the user post study Questionnaire </p>
-							<a href="files/questionnaire.pdf" download="files/questionnaire.pdf" target="_blank">
-							<button style="font-size:24px" >Questionnaire <i class="fa fa-download" target="_blank"></i></button>
-							</a>
 
-						
 						</div>
+
+
 					</section-->
+
+
+					<!-- five -->
 					<section id="contact" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Contact</h2>
+										<li>Piotr Koczy; pkoczy(at)kth.se; KTH Royal Institute of Technology, Sweden</li>
 										<li>Michael C. Welle; michael.welle(at)incar-robotics.se; INCAR Robotics AB Sweden</li>
 										<li>Yuchong Zhang; yuchongz(at)kth.se; KTH Royal Institute of Technology, Sweden</li>
 									</ul>
@@ -157,5 +217,11 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script type="text/javascript" async
+			src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+			</script>
+			<script type="text/javascript" async
+			id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+			</script>
 	</body>
 </html>
