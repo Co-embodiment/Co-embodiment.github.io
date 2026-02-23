@@ -15,12 +15,35 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<style>
-		.all-experiments-container {
-		    margin-top: 3cm;
+		.unicontainer {
+		    margin-top: 1cm;
+		    margin-bottom: 3cm;
 		}
 		#intro p {
 				color: #d9e0ff;
+		}
+		.video-container {
+			max-width: 960px;              /* ← your original max size – optional but nice */
+			margin: 0 auto;                /* centers it */
+			width: 100%;                   /* full available width up to max */
+		}
+
+		.video-container video {
+		    margin-top: 2cm;
+			width: 100%;                   /* fills container width */
+			height: auto;                  /* height auto → preserves aspect ratio */
+			display: block;                /* removes unwanted bottom gap */
+			aspect-ratio: 16 / 9;          /* most common for summary/demo videos – adjust if yours is different */
+			border-radius: 8px;            /* optional: looks nicer */
+			box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* optional */
+		}
+
+		/* Optional: on very small screens make it even friendlier */
+		@media (max-width: 600px) {
+			.video-container video {
+				border-radius: 0;          /* full-bleed on mobile */
 			}
+		}
 	</style>
 	<body class="is-preload">
 
@@ -46,53 +69,48 @@
 							<h1>One Body, Two Minds: Variable Autonomy for a Co-embodied Robotic Hand</h1>
 							<h2>Piotr Koczy, Yuchong Zhang, Danica Kragic, Michael C. Welle</h2>
 							<p>
-								Assistive robotic systems face a fundamental trade-off: fully autonomous sys-
-								tems lack user agency, while fully user-controlled systems demand continuous
-								cognitive effort. Existing shared autonomy approaches blend human and robot
-								commands but are mostly deployed in separate physical bodies. We introduce
-								co-embodiment with variable autonomy, where human and robot share a single
-								physical body and operate at different autonomy levels across task phases, from
-								mutual autonomy during object search and grasping to human-dominant control
-								during actuation.
-								</p>
-								<p>
-								We present a co-embodied, wearable robotic hand that has it’s own ”mind”
-								and operates with variable autonomy levels. A learning-from-demonstration vi-
-								suomotor diffusion policy enables autonomous grasping when the user positions
-								the hand near known objects. Once grasped, the system signals completion and
-								the human can actuate the grasped tool (drill, spray bottles, lighter, ice-cream
-								scoop) via hands-free head gestures. The human retains veto authority at all times
-								through a release gesture that returns the system to the initial phase. Unlike
-								blended autonomy, where control is continuously negotiated, our co-embodied
-								approach consists of variable autonomy from full human control to full independent 
-								actions while maintaining physical coupling, realizing a one body two minds
-								paradigm.
-								</p>
-								<p>
-								In a user study with 44 participants performing five bimanual tasks, users
-								rapidly adapted to this ”two minds” paradigm: completion times improved 23.3%
-								across trials ( 𝒑 < 0.001, Cohen’s 𝒅 = 0.82), task success reached 93.6%, and
-								acceptance ratings were high (5.70/7 overall impression, 5.52/7 daily use willing-
-								ness). This work establishes co-embodiment with variable autonomy as a viable
-								approach for assistive robotics, enabling human-robot collaboration through co-
-								embodiment.
+							Assistive robotic systems face a fundamental trade-off: fully autonomous sys-
+							tems lack user agency, while fully user-controlled systems demand continuous
+							cognitive effort. Existing shared autonomy approaches blend human and robot
+							commands but are mostly deployed in separate physical bodies. We introduce
+							co-embodiment with variable autonomy, where human and robot share a single
+							physical body and operate at different autonomy levels across task phases, from
+							mutual autonomy during object search and grasping to human-dominant control
+							during actuation.
 							</p>
-							<div class="row">
-								<div class="video-container">
-									<button onclick="window.open('files/preprint.pdf', '_blank');" class="download-button">Download Preprint</button>
-							    </div>
+							<p>
+							We present a co-embodied, wearable robotic hand that has it’s own ”mind”
+							and operates with variable autonomy levels. A learning-from-demonstration vi-
+							suomotor diffusion policy enables autonomous grasping when the user positions
+							the hand near known objects. Once grasped, the system signals completion and
+							the human can actuate the grasped tool (drill, spray bottles, lighter, ice-cream
+							scoop) via hands-free head gestures. The human retains veto authority at all times
+							through a release gesture that returns the system to the initial phase. Unlike
+							blended autonomy, where control is continuously negotiated, our co-embodied
+							approach consists of variable autonomy from full human control to full independent 
+							actions while maintaining physical coupling, realizing a one body two minds
+							paradigm.
+							</p>
+							<p>
+							In a user study with 44 participants performing five bimanual tasks, users
+							rapidly adapted to this ”two minds” paradigm: completion times improved 23.3%
+							across trials ( 𝒑 < 0.001, Cohen’s 𝒅 = 0.82), task success reached 93.6%, and
+							acceptance ratings were high (5.70/7 overall impression, 5.52/7 daily use willing-
+							ness). This work establishes co-embodiment with variable autonomy as a viable
+							approach for assistive robotics, enabling human-robot collaboration through co-
+							embodiment.
+							</p>
+							<div class="inner">
+									<button onclick="window.open('files/preprint.pdf', '_blank');" class="button mybutton">Download Preprint</button>
 							</div>
 
 							<div class="row">
 								<div class="video-container">
-							        <p><b></b> </p>
 							        <video width="960" height="540" controls="none">
-							            <source src="videos/main_video.mp4" type="video/mp4">
+							            <source src="videos/sum_video_v2_lq.mp4" type="video/mp4">
 							            Your browser does not support the video tag.
 							        </video>
-
 							    </div>
-
 							</div>
 
 
@@ -104,12 +122,13 @@
 					<!-- Eval -->
 					<section id="eval" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>User study video recordings</h2>
+							<h2>User study</h2>
 								<p>
-								  <a class="button mybutton" href="experiments_videos.html">
-									<span style="font-size: 1.5em;">Videos</span>
-								  </a>
+									Recordings collected throughout the study are available below:
 								</p>
+								<a class="button mybutton" href="experiments_videos.html">
+									<span style="font-size: 1.5em;">see Videos</span>
+								</a>
 						</div>
 					</section>
 
