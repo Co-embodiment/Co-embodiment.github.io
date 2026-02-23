@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>OperatorTakeover</title>
+		<title>One Body, Two Minds</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -29,10 +29,8 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Main</a></li>
-							<li><a href="#train">Expert Demonstrations</a></li>
-							<li><a href="#eval">Experiments</a></li>
-							<!--li><a href="#cite">How to Cite</a></li-->
+							<li><a href="#intro">Intro</a></li>
+							<li><a href="#eval">User Study</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
@@ -45,26 +43,39 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Learning Dexterous In-Hand Manipulation with Multifingered Hands via Visuomotor Diffusion</h1>
-							<h2>Piotr Koczy, Michael C. Welle, Danica Kragic</h2>
+							<h1>One Body, Two Minds: Variable Autonomy for a Co-embodied Robotic Hand</h1>
+							<h2>Piotr Koczy, Yuchong Zhang, Danica Kragic, Michael C. Welle</h2>
 							<p>
-								We present a framework for learning dexterous
-								in-hand manipulation with multifingered hands using visuomotor diffusion policies. 
-								Our system enables complex in-hand
-								manipulation tasks, such as unscrewing a bottle lid with one
-								hand, by leveraging a fast and responsive teleoperation setup for
-								the four-fingered Allegro Hand. We collect high-quality expert
-								demonstrations using an augmented reality (AR) interface
-								that tracks hand movements and applies inverse kinematics
-								and motion retargeting for precise control. The AR headset
-								provides real-time visualization, while gesture controls streamline teleoperation. 
-								To enhance policy learning, we introduce
-								a novel demonstration outlier removal approach based on
-								HDBSCAN clustering and the Global-Local Outlier Score from
-								Hierarchies (GLOSH) algorithm, effectively filtering out low-quality 
-								demonstrations that could degrade performance. We
-								evaluate our approach extensively in real-world settings and
-								provide all experimental videos on the project website.							<p>
+								Assistive robotic systems face a fundamental trade-off: fully autonomous sys-
+								tems lack user agency, while fully user-controlled systems demand continuous
+								cognitive effort. Existing shared autonomy approaches blend human and robot
+								commands but are mostly deployed in separate physical bodies. We introduce
+								co-embodiment with variable autonomy, where human and robot share a single
+								physical body and operate at different autonomy levels across task phases, from
+								mutual autonomy during object search and grasping to human-dominant control
+								during actuation.
+								</p>
+								<p>
+								We present a co-embodied, wearable robotic hand that has it’s own ”mind”
+								and operates with variable autonomy levels. A learning-from-demonstration vi-
+								suomotor diffusion policy enables autonomous grasping when the user positions
+								the hand near known objects. Once grasped, the system signals completion and
+								the human can actuate the grasped tool (drill, spray bottles, lighter, ice-cream
+								scoop) via hands-free head gestures. The human retains veto authority at all times
+								through a release gesture that returns the system to the initial phase. Unlike
+								blended autonomy, where control is continuously negotiated, our co-embodied
+								approach consists of variable autonomy from full human control to full independent 
+								actions while maintaining physical coupling, realizing a one body two minds
+								paradigm.
+								</p>
+								<p>
+								In a user study with 44 participants performing five bimanual tasks, users
+								rapidly adapted to this ”two minds” paradigm: completion times improved 23.3%
+								across trials ( 𝒑 < 0.001, Cohen’s 𝒅 = 0.82), task success reached 93.6%, and
+								acceptance ratings were high (5.70/7 overall impression, 5.52/7 daily use willing-
+								ness). This work establishes co-embodiment with variable autonomy as a viable
+								approach for assistive robotics, enabling human-robot collaboration through co-
+								embodiment.
 							</p>
 							<div class="row">
 								<div class="video-container">
@@ -90,89 +101,18 @@
 						</div>
 					</section>
 
-
-					<!-- Train -->
-					<section id="train" class="wrapper style2 fade-up">
-						<div class="inner">
-							<h2>Expert Demonstrations</h2>
-								<div class="video-container">
-							        <p><b>Lid unscrewing session using teleoperation system</b> </p>
-							        <video width="960" height="960" controls preload="auto">
-							            <source src="videos/teleop_website.mp4" type="video/mp4">
-							        </video>
-							    </div>
-						</div>
-					</section>
-
-
-
 					<!-- Eval -->
 					<section id="eval" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>Experiments</h2>
-
-
-
-							<div class="row">
-								<div class="video-container">
-							        <p><b>Best policy evaluation (\(\pi_{nt}\))</b> </p>
-							        <video width="960" height="540" controls preload="auto">
-							            <source src="videos/policy_demo.mp4" type="video/mp4">
-							            Your browser does not support the video tag.
-							        </video>
-							    </div>							  
-							</div>
-
-
-							<div class="row all-experiments-container">
-								<p><b>All experiments:</b></p>
-							</div>
-							
-							<div class="row">
-								<p>
-								  <a class="button mybutton" href="50.html">
-									<span style="font-size: 1.5em;">π<sub>all</sub><sup>50</sup></span>
-								  </a>
-								</p>
-								<p>
-								  <a class="button mybutton" href="70.html">
-									<span style="font-size: 1.5em;">π<sub>all</sub><sup>70</sup></span>
-								  </a>
-								</p>
-								<p>
-								  <a class="button mybutton" href="90.html">
-									<span style="font-size: 1.5em;">π<sub>all</sub><sup>90</sup></span>
-								  </a>
-								</p>
+							<h2>User study video recordings</h2>
 								<p>
 								  <a class="button mybutton" href="experiments_videos.html">
-									<span style="font-size: 1.5em;">π<sub>all</sub></span>
+									<span style="font-size: 1.5em;">Videos</span>
 								  </a>
 								</p>
-								<p>
-								  <a class="button mybutton" href="100ne.html">
-									<span style="font-size: 1.5em;">π<sub>ne</sub></span>
-								  </a>
-								</p>
-								<p>
-								  <a class="button mybutton" href="100nt.html">
-									<span style="font-size: 1.5em;">π<sub>nt</sub></span>
-								  </a>
-								</p>
-								<p>
-								  <a class="button mybutton" href="100nw.html">
-									<span style="font-size: 1.5em;">π<sub>nw</sub></span>
-								  </a>
-								</p>
-							  </div>
-							  
-
-							
-
 						</div>
 					</section>
 
-				
 						<!-- Cite -->
 					<!--section id="cite" class="wrapper style2 fade-up">
 
@@ -200,7 +140,8 @@
 							<h2>Contact</h2>
 							<ul>
 										<li>Michael C. Welle; mwelle(at)kth.se; KTH Royal Institute of Technology, Sweden</li>
-
+										<li>Yuchong Zhang; yuchongz(at)kth.se; KTH Royal Institute of Technology, Sweden</li>
+										<li>Piotr Koczy; pkoczy(at)kth.se; KTH Royal Institute of Technology, Sweden</li>
 									</ul>
 
 						</div>
