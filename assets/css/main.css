@@ -117,9 +117,9 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.55);
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 16.5pt;
+		font-size: 15pt;
 		font-weight: normal;
-		line-height: 1.75;
+		line-height: 1.5;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -215,7 +215,7 @@ input, select, textarea {
 			}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 1.6em;
 	}
 
 	h3 {
@@ -3246,7 +3246,7 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: #2d4b79;
 		}
 
 		.wrapper.style1 {
@@ -3266,9 +3266,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #4966a8;
+			background-color: #1f6ca8;
 		}
-
 
 		.wrapper.style4 {
 			background-color: #56627e;
@@ -3396,7 +3395,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: rgba(25, 40, 67, 255); /*#5e42a6;*/
+		/* background-color: #007BFF; */
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3539,7 +3538,7 @@ input, select, textarea {
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.15);
+		color: rgb(255, 255, 255);
 	}
 
 	#header + #wrapper + #footer > .inner {
@@ -3904,10 +3903,11 @@ input, select, textarea {
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+		color: white;
 	}
 
 		#intro p {
-			font-size: 1.25em;
+			font-size: 1.1em;
 		}
 
 			@media screen and (max-width: 980px) {
@@ -3946,6 +3946,6 @@ input, select, textarea {
 .p-code{
 	background-color: #b8b8ce;
 	padding: 10px;
-	color: #162844;
+	color: #441616;
 	border-radius: 10px;
 }
